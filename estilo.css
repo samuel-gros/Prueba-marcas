@@ -1,10 +1,15 @@
 * {
 	margin:19px;
 	font-family:arial;
-	background-color: #F5ECCE;
+	font-size:12;
+	background-color: #FAE677;
 }
 
 h1.titulo {
-	text-decoration:underline;
-	
+	margin-left:45%;
 }
+
+h2{
+	text-decoration:underline;
+}	
+
