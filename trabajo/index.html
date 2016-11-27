@@ -9,12 +9,34 @@
 
 <body>
 <center>
-
+<a id=anclaje>
 	<h1 class=titulo>Tutorial de HTML</h1>
 	<hr>
 	
+	<center>
+	<table border="3" height="50">
+	<b>Menú:</b>
+		<tr>
+		
+			<td><a href=#anclaje>ESTRUCTURA BÁSICA</a>
+			
+			<td><a href=#anclaje>AGRUPACIÓN</a>
+			
+			<td><a href=#anclaje>ELEMENTOS SEMÁNTICOS DE TEXTO</a>
+			
+			<td><a href=#anclaje>HIPERVÍNCULOS</a>
+			
+			<td><a href=#anclaje>IMÁGENES</a>
+			
+			<td><a href=#anclaje>TABLAS</a>
+		</tr>
+	</table>
+	</center>
+		
+	<hr>
+	
 	<br>
-	<h2>¿Que es HTML?</h2>
+	<h2>¿QUE ES HTML?</h2>
 	<p>El HTML (Hyper Text Markup Language) es el lenguaje con el que se escriben las páginas web. Es un 
 	lenguaje de hipertexto, es decir, un lenguaje que permite escribir texto de forma estructurada, y que 
 	está compuesto por etiquetas, que marcan el inicio y el fin de cada elemento del documento.<br>
@@ -31,7 +53,7 @@
 	<hr>
 	
 	<br>
-	<h2>Estructura básica</h2>
+	<h2>ESTRUCTURA BÁSICA</h2>
 	
 	<p>
 	La estructura básica de una página es:
@@ -68,8 +90,7 @@
 	<hr>
 	
 	<br>
-	<h2>Encabezados (Headings)</h2>
-	<h3>&lt;h&gt;</h3>
+	<h3>Encabezados (Headings): &lt;h&gt;</h3>
 	<table>
 		<tr>
 			<td style="border:1px dashed">
@@ -102,11 +123,10 @@
 	
 	<hr>
 	
-	<h2>Agrupación</h2>
+	<h2>AGRUPACIÓN</h2>
 	<br>
 	
-	<h3>Parrafos</h3>
-	<h3>&lt;p&gt;</h3>
+	<h3>Parrafos: &lt;p&gt;</h3>
 	<table>
 		<tr>
 			<td width="300" style="border:1px dashed">
@@ -130,8 +150,7 @@
 	</table>
 	
 	<br>
-	<h3>Texto preformateado</h3>
-	<h3>&lt;pre&gt;</h3>
+	<h3>Texto preformateado: &lt;pre&gt;</h3>
 	<table>
 		<tr>
 			<td style="border:1px dashed">
@@ -160,8 +179,21 @@
 	
 	<br>
 	
-	<h3>Listas</h3>
-	<h3>&lt;li&gt;</h3>
+		<h3>Horizontal rule: &lt;hr&gt;</h3>
+		
+		<p>La siguiente línea horizontal divide temáticamente este
+
+		párrafo del siguiente</p>
+
+		<hr>
+
+		<p>Este segundo párrafo puede pertenecer, por ejemplo, a un
+
+		cambio de escena dentro de un mismo capítulo de una novela.</p>
+		
+	<br>
+	
+	<h3>Listas: &lt;li&gt;</h3>
 	
 	<h4>Listas no ordenadas</h4>
 	
@@ -256,7 +288,304 @@
 		</tr>
 	</table>
 	
+	<hr>
+	
+	<h2>ELEMENTOS SEMÁNTICOS DE TEXTO</h2>
+	
+	<h3>Resaltado</h3>
+	
+	ITALIC: I – Bastardilla
+
+	<p>Este párrafo contiene una palabra en cursiva en su interior: la
+
+	escribimos con el símbolo de &lt;i&gt;<i>itálica</i>&lt;/i&gt;.</p>
+
+	BOLD: B – Negrita
+
+	<p>En este, sin embargo, hay una palabra
+
+	que aparece en &lt;b&gt;<b>negrita</b>&lt;/b&gt;.</p>
+
+	UNDERLINED: U – Subrayada
+
+	<p>Y la palabra &lt;u&gt;<u>subrayada</u>&lt;/u&gt; es la que
+
+	podemos ver en este párrafo final.</p>
+	
+
+	STRESS EMPHASIS: EM<br><br>
+
+	Pone énfasis o recalca una parte del texto<br><br>
+
+	STRONG<br><br>
+
+	Parte importante, seria o urgente<br><br>
+
+	SMALL<br><br>
+
+	Representa la “letra pequeña” (de un contrato...)<br><br>
+
+	S<br><br>
+
+	Representa contenido irrelevante u obsoleto<br><br>
+	
 	<br>
 	
+	<h3>Break: &lt;br&gt; (Salto de línea)</h3>
+	
+
+	<p>Este párrafo continene un <br>
+
+	salto de línea</p>
+	
+	<br>
+	<hr>
+	
+	<h2>HIPERVÍNCULOS: &lt;href&gt;</h2>
+
+	<p>
+
+	En el hipervínculo distinguimos las siguientes partes:<br><br>
+	
+	<ul>
+
+	<li>Las etiquetas de apertura y cierre del hipervínculo &lt;a&gt; y &lt;/a&gt;<br>
+
+	<li>El atributo href, con un valor que se indica con el símbolo igual y la URL a la que dirige el hipervínculo dentro de las comillas.<br>
+
+	<li>Un texto que es el que ve el usuario como link.<br>
+	
+	</ul>
+	
+	</p>
+	<br>
+	<h3>Externos</h3>
+
+	<p>
+	Un hipervínculo externo es un vínculo a otro sitio web en Internet (sitio externo). Es un vínculo a cualquier otro lugar fuera del sitio actual. 
+	Cuando ponemos un vínculo externo, escribimos la dirección completa de la página incluido http://www.... Estas rutas que incluyen http://... las 
+	denominamos rutas absolutas. <br><br>
+	</p>
+	
+	<table>
+		<tr>
+			<td width="540" style="border:1px dashed">
+				<p>
+				&lt;a href="http://www.google.es"&gt;Acceder a la página web google.es&lt;/a&gt;
+				</p>
+
+			</td>
+			<td>
+				<p>
+				<a href="http://www.google.es">Acceder a la página web google.es</a>
+				</p>
+			</td>
+		</tr>
+	</table>
+	
+	<br>
+	
+	<h3>Internos</h3>
+	
+	<p>
+	Un hipervínculo interno es un vínculo a una página que se encuentra en el mismo sitio web (sitio local). Así, para referirnos a 
+	ella tan solo basta con poner la ruta o dirección en el disco duro. Si se encuentra en la misma carpeta, basta con poner su nombre.  <br><br>
+	</p>
+	
+	<table>
+		<tr>
+			<td style="border:1px dashed">
+				<p>
+				&lt;a href=#anclaje&gt;Arriba&lt;/a&gt;
+				</p>
+
+			</td>
+			<td>
+				<p>
+				<a href=#anclaje>Arriba</a> Nos enviara a la seccion de nuestra pagina en la que hayamos escrito: &lt;a id=anclaje&gt;
+				</p>
+			</td>
+		</tr>
+	</table>
+
+	<br>
+	<hr>
+	<h2>IMÁGENES</h2>
+	
+	<p>
+	Origen (SouRCe): src<br>
+
+	Ancho: width<br>
+
+	Alto: height<br>
+
+	Texto alternativo (ALTernative text): alt<br>
+	</p>
+
+	<table>
+		<tr>
+			<td width="420" style="border:1px dashed">
+				<p>
+				&lt;img src="html.png"&gt; <br><br>
+				&lt;img src="html.png" width=200&gt; <br><br>
+				&lt;img src="html.png" width=200 height=150&gt; <br><br>
+				&lt;img src="html.png" width=200 height=250 alt="foto"&gt; <br><br>
+				</p>
+
+			</td>
+			<td>
+				<p>
+				<img src="html.png"> <img src="html.png" width=200> <img src="html.png" width=200 height=150> 
+				<img src="html.png" width=200 height=250 alt="foto">
+				</p>
+			</td>
+		</tr>
+	</table>
+	<br>
+	<h3>Mapas de imagenes</h3>
+	<p>
+	Un mapa de imagen es una imagen que contiene una o más áreas invisibles llamadas zonas activas. 
+	Cada una está asociada a un hipervínculo. Normalmente la imagen ofrece al usuario pistas visuales 
+	sobre la información que está disponible al hacer clic en cada parte de la imagen. <br>
+	Para ello se usa la etiqueta &lt;map&gt;&lt;/map&gt; y la etiqueta &lt;area&gt; para definir cada zona de la imagen. <br><br>
+	Son necesarios los siguientes atributos:
+	<ul>
+		<li>shape="": Es el tipo de área que queremos crear (default, rect, circle, poly).
+		<li>coords="": Son las coordenadas para el tamaño del área.
+		<li>href="": Determina la dirección a la que hacemos referencia con la zona.
+		<li>alt="": Comentario descriptivo de la zona (Obligatorio si usamos "href").
+		<li>download: Descarga el fichero del enlace.
+		<li>tarjet="": Permite elegir como abrir el enlace.
+	</ul>
+	</p>
+	<br>
+	
+	<table>
+		<tr>
+			<td width="600" height="250" style="border:1px dashed">
+			
+				&lt;table border=0 width=450&gt;<br>
+				&lt;tr&gt;<br>
+				&lt;td align="center"&gt; <br>
+				&lt;map name="mapa1"&gt; <br>
+				&lt;area alt="Mis amigos" shape="circle" coords="44,36,29" href="#"&gt; <br>
+				&lt;area alt="Mi novia" shape="circle" coords="140,35,31" href="#"&gt; <br>
+				&lt;area alt="Mi Familia" shape="circle" coords="239,37,30" href="#"&gt; <br>
+				&lt;area alt="Mi trabajo" shape="circle" coords="336,36,31" href="#"&gt; <br>
+				&lt;/map&gt; <br>
+				&lt;img src="mapa.png" width="380" alt="Mapa de imágenes. Pulsa en cada una de los círculos." border="0" usemap="#mapa1"&gt; <br>
+				&lt;br&gt; <br>
+				&lt;/td&gt;<br>
+				&lt;/tr&gt;<br>
+				&lt;/table&gt;<br>
+				
+			</td>
+			<td>
+				<table border=0 width=450>
+				<tr>
+					<td align="center"> 
+				<map name="mapa1"> 
+				<area alt="Mis amigos" shape="circle" coords="44,36,29" href="#"> 
+				<area alt="Mi novia" shape="circle" coords="140,35,31" href="#"> 
+				<area alt="Mi Familia" shape="circle" coords="239,37,30" href="#"> 
+				<area alt="Mi trabajo" shape="circle" coords="336,36,31" href="#"> 
+				</map> 
+				<img src="mapa.png" width="380" alt="Mapa de imágenes. Pulsa en cada una de los círculos." border="0" usemap="#mapa1"> 
+				<br> 
+					</td>
+				</tr>
+				</table>
+			</td>
+		</tr>
+	</table>
+	
+	<br>
+	<hr>
+	
+	<h2>TABLAS</h2>
+	
+	<table>
+		<tr>
+			<td width="420" style="border:1px dashed">
+				<p>
+				&lt;table border="3"&gt;<br>
+					&lt;tr&gt;<br>
+					  &lt;th&gt;Curso<br>
+					  &lt;th&gt;Horas<br>
+					  &lt;th&gt;Horario<br>
+					&lt;/tr&gt;
+					 
+					&lt;tr&gt;<br>
+					 &lt;td&gt;CSS<br>
+					  &lt;td&gt;20<br>
+					  &lt;td&gt;16:00 - 20:00<br>
+					&lt;/tr&gt;<br>
+					 
+					&lt;tr&gt;<br>
+					  &lt;td&gt;HTML<br>
+					  &lt;td&gt;20<br>
+					  &lt;td&gt;16:00 - 20:00<br>
+					&lt;/tr&gt;
+					 
+					&lt;tr&gt;<br>
+					  &lt;td&gt;Dreamweaver<br>
+					  &lt;td&gt;60<br>
+					  &lt;td&gt;16:00 - 20:00<br>
+					&lt;/tr&gt;<br>
+			&lt;/table&gt;<br>
+
+				</p>
+
+			</td>
+			<td>
+				<table border="3">
+					<tr>
+					  <th>Curso
+					  <th>Horas
+					  <th>Horario
+					</tr>
+					 
+					<tr>
+					  <td>CSS
+					  <td>20
+					  <td>16:00 - 20:00
+					</tr>
+					 
+					<tr>
+					  <td>HTML
+					  <td>20
+					  <td>16:00 - 20:00
+					</tr>
+					 
+					<tr>
+					  <td>Dreamweaver
+					  <td>60
+					  <td>16:00 - 20:00
+					</tr>
+			</table>
+			</td>
+		</tr>
+	</table>
+	<br>
+	<p>
+	<u>Etiquetas</u>
+	<ul>
+		<li> <b> &lt;tr&gt; : </b>Se emplea para definir cada fila de las tablas de datos
+		<br>
+		<li> <b> &lt;td&gt; : </b>Se emplea para definir cada una de las celdas que forman las filas de una tabla, es decir, las columnas de la tabla
+			<ul> Atributos:
+				<li> colspan = "numero" - Número de columnas que ocupa esta celda
+				<li> rowspan = "numero" - Número de filas que ocupa esta celda
+			</ul>
+		<br>
+		<li> <b> &lt;th&gt; : </b>Se emplea para definir las celdas que son cabecera de una fila o de una columna de la tabla
+			<ul> Atributos:
+				<li> colspan = "numero" - Número de columnas que ocupa esta celda
+				<li> rowspan = "numero" - Número de filas que ocupa esta celda
+			</ul>
+	</ul>
+	</p>
+	
+
 </center>	
 </body>
